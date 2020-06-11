@@ -4,6 +4,7 @@ date: 2020-05-28T11:18:26+08:00
 draft: false
 tags: ['nginx']
 categories: ['后端']
+img: 'https://tva1.sinaimg.cn/large/006y8mN6ly1g7zvd7vrckj31e70qp1kz.jpg'
 ---
 
 #### 前言
