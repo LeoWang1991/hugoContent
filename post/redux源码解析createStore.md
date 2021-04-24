@@ -80,7 +80,7 @@ logState();
 
 改下`dispatch` 源码来验证下，
 
-![image-20210424234941472](../../../lastblog/imgs/image-20210424234941472.png)
+![image-20210424234941472](https://blog-img-1256179672.cos.ap-shanghai.myqcloud.com/img/image-20210424234941472.png)
 
 `store.dispatch({ type: 'ADD' });` 这个操作在此时只调用第一个订阅函数。而应该把后面的一些订阅情况考虑过来。所以需要引入`nextListeners` 来解决这个问题，每次执行时候currentListeners=nextListeners保存一份当前时间节点的订阅事件快照。至于后续的变动改变发生在`nextListeners`中。
 
